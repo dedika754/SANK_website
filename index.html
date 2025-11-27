@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PT. Seaweed Anugrah Nusantara Kita (SANK)</title>
+
+  <!-- Fonts & CSS Lib -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<!-- ================= NAVBAR SANK - PREMIUM LUXURY ================= -->
+<nav class="navbar navbar-expand-lg navbar-sank-lux fixed-top">
+  <div class="container">
+
+    <!-- BRAND -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#home">
+      <span class="brand-text-lux ms-2">PT. SANK</span>
+    </a>
+
+    <!-- TOGGLER -->
+    <button class="navbar-toggler border-0" type="button">
+      <span class="toggler-icon-lux"></span>
+      <span class="toggler-icon-lux"></span>
+      <span class="toggler-icon-lux"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenuLux">
+      <ul class="navbar-nav align-items-center gap-4">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li class="nav-item"><a class="nav-link" href="#history">History</a></li>
+        <li class="nav-item"><a class="nav-link" href="#business">Business</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact & Information</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<style>
+/* ========== PREMIUM LUXURY NAVBAR v3 FULL RESPONSIVE ========== */
+.navbar-sank-lux {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 14px 0;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(14, 140, 71, 0.12);
+  transition: all 0.45s ease;
+  z-index: 2000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Scroll Effect */
+.navbar-sank-lux.scrolled {
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.10);
+  padding: 10px 0;
+}
+
+/* Entrance Animation */
+@keyframes fadeSlideDown {
+  0% { opacity: 0; transform: translateY(-25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.navbar-sank-lux {
+  animation: fadeSlideDown 0.7s ease forwards;
+}
+
+/* BRAND */
+.brand-text-lux {
+  font-size: 1.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #0b6e38, #19b85a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: .6px;
+  transition: 0.35s ease;
+}
+.brand-text-lux:hover {
+  filter: brightness(1.12);
+  letter-spacing: 2px;
+}
+
+/* NAV LINKS */
+.navbar-nav .nav-link {
+  font-weight: 700;
+  color: #1c1c1c !important;
+  padding: 12px 20px;
+  font-size: 1rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.35s ease;
+}
+
+/* Underline hover & active */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg,#0b6e38,#21c063);
+  transition: width 0.4s ease;
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 75%;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0e8c47 !important;
+}
+
+/* Toggler Button */
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.toggler-icon-lux {
+  width: 100%;
+  height: 3px;
+  background: #0e8c47;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.navbar-toggler:hover .toggler-icon-lux {
+  background: #21c063;
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+/* Desktop Medium */
+@media (max-width: 1200px) {
+  .brand-text-lux { font-size: 1.7rem; }
+  .navbar-nav .nav-link { padding: 10px 16px; }
+}
+
+/* Tablet Landscape */
+@media (max-width: 992px) {
+  .collapse.navbar-collapse {
+    background: #ffffff;
+    padding: 12px 0;
+    margin-top: 12px;
+    border-radius: 16px;
+    box-shadow: 0 12px 38px rgba(0,0,0,0.12);
+    animation: fadeMenu .35s ease forwards;
+  }
+  @keyframes fadeMenu {
+    0% {opacity:0; transform: translateY(-10px);}
+    100% {opacity:1; transform: translateY(0);}
+  }
+
+  .navbar-nav {
+    text-align: center;
+    gap: 6px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.08rem;
+    padding: 14px 0;
+    width: 100%;
+  }
+  .navbar-sank-lux.scrolled {
+    box-shadow: 0 6px 25px rgba(0,0,0,0.10);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .brand-text-lux { font-size: 1.55rem; }
+  .navbar-nav .nav-link { font-size: 1rem; padding: 14px 0; }
+  .collapse.navbar-collapse {
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+  .brand-text-lux { font-size: 1.4rem; }
+}
+
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar-sank-lux");
+  const toggler = document.querySelector(".navbar-toggler");
+  const navMenu = document.getElementById("navMenuLux");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  // Scroll Effect
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+
+  // Toggle Mobile Menu
+  toggler.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navMenu.classList.toggle("show");
+  });
+
+  // Close mobile menu + active link set
+  navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      navLinks.forEach(nav => nav.classList.remove("active"));
+      e.target.classList.add("active");
+      navMenu.classList.remove("show");
+    });
+  });
+
+  // Close menu when click outside
+  document.addEventListener("click", (e) => {
+    if (!navbar.contains(e.target)) navMenu.classList.remove("show");
+  });
+
+  // ESC close menu
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") navMenu.classList.remove("show");
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= HERO SECTION SANK PREMIUM LUXURY ================= -->
+<header class="hero-green-lux d-flex align-items-center" id="home">
+  <div class="container">
+    <div class="row align-items-center gy-4 gy-lg-0 justify-content-between">
+
+      <!-- LEFT TEXT -->
+      <div class="col-lg-6 text-center text-lg-start hero-text-lux">
+
+        <span class="badge-lux mb-3 fade-in delay-0">
+          PT. Seaweed Anugrah Nusantara Kita (SANK)
+        </span>
+
+        <h1 class="hero-title-lux mb-3 fade-in-up delay-1">
+          Building a Sustainable Future Through <span class="text-gradient-lux">Seaweed Innovation</span>
+        </h1>
+
+        <p class="hero-desc-lux fade-in-up delay-2">
+          <span class="highlight-lux">PT. Seaweed Anugrah Nusantara Kita (SANK)</span> is an Indonesian company specializing in 
+          <strong>seaweed cultivation, seaweed product development, carbon trading,</strong> and
+          <strong>educational tourism focused on seaweed and coastal ecosystems.</strong>
+        </p>
+
+        <p class="hero-desc-lux fade-in-up delay-3">
+          Through innovation, collaboration, and community empowerment, we are committed to supporting 
+          <strong>food security, economic growth for coastal communities, and environmental sustainability</strong> — 
+          ensuring that Indonesia becomes one of the world leaders in seaweed-based industries.
+        </p>
+
+        <div class="mt-4 fade-in-up delay-4">
+          <a href="#business" class="btn btn-lux-glass px-5 py-3">
+            <i class="bi bi-arrow-right-circle me-2"></i> Explore Our Business
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT HERO IMAGE -->
+      <div class="col-lg-5 text-center fade-in-up delay-2">
+        <div class="hero-image-wrapper-lux mx-auto position-relative">
+          <div class="bg-circle-lux"></div>
+          <img src="assets/img/logo-sank.png" class="hero-image-lux shadow-xl" alt="SANK Logo">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+<style>
+/* =================== HERO PREMIUM LUX v2 =================== */
+.hero-green-lux {
+  min-height: 100vh;
+  padding: 9rem 1.5rem 4rem;
+  background: radial-gradient(circle at 20% 10%, #eefcf5, #c4ecd7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  animation: heroFadeIn 0.9s ease-out forwards;
+}
+
+/* Entrance Animation */
+@keyframes heroFadeIn {
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* GLASS BADGE PREMIUM */
+.badge-lux {
+  padding: 14px 32px;
+  background: rgba(255,255,255,0.30);
+  backdrop-filter: blur(18px);
+  border-radius: 80px;
+  color: #0b5a34;
+  font-weight: 800;
+  font-size: 1rem;
+  border: 1.8px solid rgba(10,120,60,0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  transition: all 0.45s ease;
+}
+.badge-lux:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+}
+
+/* HERO TEXT */
+.hero-text-lux {
+  animation: fadeSlideLeft 1s ease forwards;
+}
+@keyframes fadeSlideLeft {
+  0% { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* HERO TITLE */
+.hero-title-lux {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #033d22;
+  line-height: 1.18;
+}
+.text-gradient-lux {
+  background: linear-gradient(135deg, #0dcc57, #059f47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* HERO DESCRIPTION */
+.hero-desc-lux {
+  font-size: 1.25rem;
+  max-width: 650px;
+  color: #1e3e2a;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* PREMIUM GLASS BUTTON */
+.btn-lux-glass {
+  background: linear-gradient(135deg, #12b55d, #0a7a45);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  padding: 14px 40px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 14px 34px rgba(13,140,72,0.25);
+  transition: all 0.45s ease;
+}
+.btn-lux-glass:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 26px 60px rgba(0,0,0,0.28);
+}
+
+/* HERO IMAGE */
+.hero-image-wrapper-lux {
+  max-width: 450px;
+  position: relative;
+}
+.bg-circle-lux {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(6,150,80,0.25), transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: floatCircle 6s ease-in-out infinite;
+}
+@keyframes floatCircle {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(12px); }
+}
+.hero-image-lux {
+  width: 100%;
+  border-radius: 30px;
+  padding: 18px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 22px 50px rgba(0,0,0,0.18);
+  transition: all 0.45s ease;
+}
+.hero-image-lux:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 32px 65px rgba(0,0,0,0.28);
+}
+
+/* ENTRANCE ELEMENT SEQUENCE */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(28px);
+  animation: fadeInUp 1s forwards ease-out;
+}
+.fade-in-up.delay-0 { animation-delay: 0.25s; }
+.fade-in-up.delay-1 { animation-delay: 0.55s; }
+.fade-in-up.delay-2 { animation-delay: 0.85s; }
+.fade-in-up.delay-3 { animation-delay: 1.15s; }
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 992px) {
+  .hero-green-lux {
+    text-align: center;
+    padding-top: 7rem;
+    flex-direction: column;
+  }
+  .hero-title-lux {
+    font-size: 3rem;
+  }
+  .hero-image-wrapper-lux {
+    max-width: 360px;
+    margin-top: 2.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title-lux {
+    font-size: 2.4rem;
+  }
+  .hero-desc-lux {
+    font-size: 1.05rem;
+  }
+  .hero-green-lux {
+    padding: 6rem 1rem 3rem;
+  }
+  .hero-image-wrapper-lux {
+    max-width: 260px;
+  }
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= INTRODUCTION SANK PREMIUM LUXURY ================= -->
+<section id="introduction" class="pendahuluan-green-lux text-center">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="mb-5">
+      <h2 class="section-title-lux fade-in delay-1">Introduction</h2>
+      <div class="section-divider-lux mx-auto mt-2"></div>
+    </div>
+
+    <!-- Description -->
+    <div class="mx-auto mb-5">
+      <p class="pendahuluan-desc-lux fade-in delay-2">
+        <span class="highlight-lux">PT. Seaweed Anugrah Nusantara Kita (SANK)</span> is an Indonesia-based organization specializing in 
+        <strong>seaweed cultivation and farming practices, seaweed product processing and development, blue carbon trading,</strong>
+        and <strong>environmental and marine educational tourism focused on seaweed ecosystems.</strong>
+        Our goal is to build a sustainable maritime industry that promotes both environmental conservation and the economic prosperity of coastal communities.
+      </p>
+
+      <p class="pendahuluan-desc-lux fade-in delay-3">
+        By integrating <strong>eco-friendly production principles, responsible resource management, and scientific innovation</strong>,
+        SANK actively contributes to the advancement of the national <strong>blue economy</strong>.
+        Through our <strong>blue carbon initiatives</strong>, we support the preservation of marine ecosystems while reducing global carbon emissions for a greener future.
+      </p>
+    </div>
+
+    <!-- Vision & Mission -->
+    <div class="row justify-content-center g-4">
+
+      <!-- Vision -->
+      <div class="col-lg-5 col-md-6 fade-in delay-4">
+        <div class="info-card-lux h-100 text-center">
+          <div class="icon-pill-lux mx-auto mb-3">
+            <i class="bi bi-eye"></i>
+          </div>
+          <h5 class="fw-bold text-dark mb-3">Company Vision</h5>
+          <p class="text-muted">
+            To become the global pioneer of a sustainable seaweed-based industry from Indonesia by advancing innovation, environmental responsibility,
+            and economic empowerment rooted in the <strong>blue carbon ecosystem</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mission -->
+      <div class="col-lg-5 col-md-6 fade-in delay-5">
+        <div class="info-card-lux h-100 text-center">
+          <div class="icon-pill-lux mx-auto mb-3">
+            <i class="bi bi-bullseye"></i>
+          </div>
+          <h5 class="fw-bold text-dark mb-3">Company Mission</h5>
+          <ul class="list-check-lux text-start d-inline-block text-left">
+            <li>Develop sustainable seaweed cultivation based on international standards.</li>
+            <li>Produce innovative and high-value seaweed derivative products.</li>
+            <li>Strengthen the blue carbon trading industry to support climate-positive solutions.</li>
+            <li>Promote educational tourism based on marine biodiversity and ecosystem conservation.</li>
+            <li>Empower coastal communities through job creation, training, and fair economic opportunities.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* ===== GREEN PREMIUM LUXURY INTRODUCTION v2 ===== */
+.pendahuluan-green-lux {
+  background: radial-gradient(circle at top, #f0fdf5, #e3f7ec);
+  padding: 7rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative light flare */
+.pendahuluan-green-lux::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(13,207,90,0.20), transparent 75%);
+  top: -140px;
+  right: -120px;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* Section Titles */
+.section-title-lux {
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: #06321d;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.section-divider-lux {
+  width: 125px;
+  height: 6px;
+  background: linear-gradient(90deg, #0dcf5a, #0a7f43);
+  border-radius: 20px;
+  margin-top: 0.6rem;
+  box-shadow: 0 6px 16px rgba(10,120,60,0.35);
+}
+
+/* Section Description */
+.pendahuluan-desc-lux {
+  max-width: 860px;
+  margin: 0 auto 2.2rem;
+  color: #1c3f2d;
+  font-size: 1.22rem;
+  line-height: 1.95;
+  font-weight: 520;
+}
+
+/* Luxury Glass Card */
+.info-card-lux {
+  background: rgba(255,255,255,0.38);
+  backdrop-filter: blur(18px);
+  border-radius: 32px;
+  padding: 3rem 2.4rem;
+  border: 1.6px solid rgba(46,125,50,0.32);
+  box-shadow: 0 28px 65px rgba(0,0,0,0.12);
+  transition: all 0.5s ease;
+}
+
+.info-card-lux:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 36px 85px rgba(0,0,0,0.22);
+}
+
+/* Icon Premium Circle */
+.icon-pill-lux {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(135deg,#0dcc57,#0a7f43);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 2.3rem;
+  font-weight: bold;
+  box-shadow: 0 10px 28px rgba(10,120,60,0.35);
+  transition: all 0.45s ease;
+}
+
+.icon-pill-lux:hover {
+  transform: scale(1.18);
+  box-shadow: 0 14px 38px rgba(10,120,60,0.5);
+}
+
+/* Luxury Check List */
+.list-check-lux li {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 18px;
+  color: #1c372e;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.list-check-lux li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #0dcf5a;
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(13,207,90,0.7);
+}
+
+/* Hover glow minor effect */
+.list-check-lux li:hover {
+  color: #0a623c;
+  transform: translateX(4px);
+}
+
+/* Fade-in Animation Smooth */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUpSmooth 1.05s forwards ease-out;
+}
+
+.fade-in.delay-1 { animation-delay: 0.35s; }
+.fade-in.delay-2 { animation-delay: 0.7s; }
+.fade-in.delay-3 { animation-delay: 1.05s; }
+.fade-in.delay-4 { animation-delay: 1.4s; }
+.fade-in.delay-5 { animation-delay: 1.75s; }
+
+@keyframes fadeUpSmooth {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .section-title-lux { font-size: 2.9rem; }
+}
+@media (max-width: 768px) {
+  .pendahuluan-desc-lux { font-size: 1.08rem; }
+  .info-card-lux { padding: 2.4rem 1.8rem; }
+}
+@media (max-width: 576px) {
+  .section-title-lux { font-size: 2.3rem; }
+  .icon-pill-lux { width: 70px; height: 70px; font-size: 1.7rem; }
+  .list-check-lux li { padding-left: 30px; font-size: 0.95rem; }
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= COMPANY HISTORY SANK PREMIUM LUXURY ================= -->
+<section id="history" class="sejarah-green-lux">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+      <h2 class="section-title-lux fade-in delay-1">Company History</h2>
+      <div class="section-divider-lux mx-auto mt-2"></div>
+      <p class="section-sub-lux fade-in delay-2 mt-3">
+        The story of <span class="highlight-lux">PT. Seaweed Anugrah Nusantara Kita (SANK)</span> in transforming
+        Indonesia’s seaweed industry into a <span class="highlight-lux">globally competitive and sustainable sector</span>.
+      </p>
+    </div>
+
+    <!-- CONTENT ROW -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card-lux text-center fade-in delay-3">
+          <div class="icon-box-lux"><i class="bi bi-flag"></i></div>
+          <h5 class="fw-bold mt-3">The Beginning</h5>
+          <p class="text-muted">
+            PT. SANK was founded in <strong>2025</strong> by a team of experts in seaweed science,
+            environmental research, and social entrepreneurship. The company was born from a shared
+            commitment to build a sustainable maritime ecosystem that benefits both nature and coastal economies.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card-lux text-center fade-in delay-4">
+          <div class="icon-box-lux"><i class="bi bi-water"></i></div>
+          <h5 class="fw-bold mt-3">Organic Cultivation</h5>
+          <p class="text-muted">
+            The journey began with <strong>organic seaweed farming initiatives</strong> in collaboration with
+            coastal communities. This initiative provided a foundation for SANK to develop a sustainable business
+            model supported by the principles of the <strong>blue economy</strong> and long-term marine stewardship.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card-lux text-center fade-in delay-5">
+          <div class="icon-box-lux"><i class="bi bi-recycle"></i></div>
+          <h5 class="fw-bold mt-3">Development & Expansion</h5>
+          <p class="text-muted">
+            Over time, SANK expanded its business to include the <strong>seaweed processing industry</strong>,
+            producing high-value derivative products while pioneering <strong>blue carbon trading</strong> through
+            scientific-based seaweed carbon sequestration projects to support climate-positive solutions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Description -->
+    <p class="sejarah-footer-lux fade-in delay-6 mt-4">
+      Today, PT. SANK stands as an integrated maritime company that continues to grow by prioritizing
+      sustainability, technological innovation, and the empowerment of Indonesia’s coastal communities —
+      contributing to a greener and more prosperous future for generations to come.
+    </p>
+  </div>
+</section>
+
+
+<style>
+/* ===== COMPANY HISTORY – GREEN PREMIUM LUXURY UPGRADED ===== */
+.sejarah-green-lux {
+  background: radial-gradient(circle at top, #e6f7ed, #ffffff);
+  padding: 7rem 1rem;
+}
+
+/* TITLE */
+.section-title-lux {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #09331e;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.10);
+}
+.section-divider-lux {
+  width: 115px;
+  height: 6px;
+  background: linear-gradient(90deg, #11d866, #1b5e21);
+  border-radius: 50px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+.section-sub-lux {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.18rem;
+  color: #244b36;
+  font-weight: 500;
+  opacity: 0.88;
+  line-height: 1.85;
+}
+
+/* SERVICE CARD LUXURY / HISTORY STEP */
+.service-card-lux {
+  background: rgba(255,255,255,0.32);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  padding: 2.8rem 2.2rem;
+  border: 1px solid rgba(27,94,33,0.20);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.12);
+  transition: all 0.45s ease-in-out;
+}
+.service-card-lux:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 35px 75px rgba(21,66,30,0.38);
+}
+
+/* ICON BOX */
+.icon-box-lux {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 1.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(135deg, #0fd86a, #1b5e21);
+  color: #fff;
+  font-size: 2.1rem;
+  transition: transform .35s ease, box-shadow .35s ease;
+  box-shadow: 0 10px 26px rgba(27,94,33,0.32);
+}
+.icon-box-lux:hover {
+  transform: scale(1.18);
+  box-shadow: 0 16px 36px rgba(27,94,33,0.45);
+}
+
+/* FOOTER DESCRIPTION */
+.sejarah-footer-lux {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  font-size: 1.12rem;
+  color: #244b36;
+  text-align: center;
+  font-weight: 500;
+  opacity: 0.9;
+  line-height: 1.9;
+}
+
+/* SMOOTH FADE-IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.1s ease-out forwards;
+}
+.fade-in.delay-1 { animation-delay: 0.3s; }
+.fade-in.delay-2 { animation-delay: 0.6s; }
+.fade-in.delay-3 { animation-delay: 0.9s; }
+.fade-in.delay-4 { animation-delay: 1.2s; }
+.fade-in.delay-5 { animation-delay: 1.5s; }
+.fade-in.delay-6 { animation-delay: 1.8s; }
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px){
+  .section-title-lux { font-size: 2.7rem; }
+  .service-card-lux { padding: 2.4rem 1.7rem; }
+}
+@media(max-width: 768px){
+  .section-title-lux { font-size: 2.4rem; }
+  .section-sub-lux { font-size: 1.05rem; }
+}
+@media(max-width: 576px){
+  .section-title-lux { font-size: 2rem; letter-spacing: 1px; }
+  .icon-box-lux { width: 68px; height: 68px; font-size: 1.55rem; }
+  .section-sub-lux, .sejarah-footer-lux { font-size: 0.92rem; }
+}
+
+</style>
+
+
+
+
+
+
+
+<!-- ================= SANK BUSINESS - PREMIUM LUXURY ================= -->
+<section id="business" class="bisnis-green-lux py-5">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="section-title-lux fade-in delay-1 mb-3">Core Business</h2>
+      <div class="section-divider-lux mx-auto mb-3"></div>
+      <p class="section-sub-lux fade-in delay-2">
+        SANK develops a fully integrated seaweed industry ecosystem — from responsible farming and
+        sustainable production to global market distribution — strengthened by the principles of
+        environmental sustainability, innovation, and the blue economy.
+      </p>
+    </div>
+
+    <!-- Business Cards -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Cultivation -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="green-card-lux fade-in delay-3 h-100">
+          <div class="icon-box-lux mb-3"><i class="bi bi-water"></i></div>
+          <h5 class="fw-bold">Seaweed Cultivation</h5>
+          <p class="card-desc">
+            SANK manages organic seaweed farming projects across <strong>Sumenep, Sulawesi, Bali, NTB, and NTT</strong>,
+            cultivating premium species such as <em>Eucheuma cottonii</em>, <em>Sargassum</em>, and <em>Gracilaria</em>.
+            These cultivation programs are designed to improve both the environment and the socioeconomic welfare of
+            coastal communities.
+          </p>
+          <ul class="list-check-lux">
+            <li>Chemical-free and environmentally friendly farming practices</li>
+            <li>Rotational and regenerative seaweed farming to protect marine biodiversity</li>
+            <li>Supports <strong>blue carbon</strong> sequestration for climate-positive solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Processing -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="green-card-lux fade-in delay-4 h-100">
+          <div class="icon-box-lux mb-3"><i class="bi bi-gear"></i></div>
+          <h5 class="fw-bold">Modern Seaweed Processing</h5>
+          <p class="card-desc">
+            A sustainable manufacturing facility powered by green technology to produce international-standard
+            seaweed derivative products for domestic and export markets. SANK ensures that every process minimizes
+            carbon emissions and adheres to global quality certifications.
+          </p>
+          <ul class="list-check-lux">
+            <li>Premium products: agar, natural skincare ingredients, & organic bio-fertilizers</li>
+            <li>Certified: <strong>Halal, Organic, and ISO 14001 Environmental Management</strong></li>
+            <li>Energy-efficient production utilizing <strong>solar-powered systems</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Eco Tourism -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="green-card-lux fade-in delay-5 h-100">
+          <div class="icon-box-lux mb-3"><i class="bi bi-globe2"></i></div>
+          <h5 class="fw-bold">Educational Eco-Tourism</h5>
+          <p class="card-desc">
+            An immersive educational tourism experience that provides deeper understanding of seaweed ecosystems,
+            sustainability practices, and community-based conservation — while promoting economic independence for
+            coastal residents.
+          </p>
+          <ul class="list-check-lux">
+            <li>Eco-tour packages and seaweed farm field visits</li>
+            <li>Workshops on seaweed processing, climate awareness & environmental conservation</li>
+            <li>Entrepreneurship and MSME empowerment programs for coastal communities</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* ===== BUSINESS - GREEN PREMIUM LUXURY UPGRADED ===== */
+.bisnis-green-lux {
+  background: radial-gradient(circle at top, #e6f7ed, #ffffff);
+  padding: 7rem 1rem;
+}
+
+/* TITLE */
+.section-title-lux {
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #09331e;
+  letter-spacing: 1.6px;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.10);
+}
+.section-divider-lux {
+  width: 115px;
+  height: 6px;
+  background: linear-gradient(90deg, #10d567, #1b5e21);
+  border-radius: 50px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+.section-sub-lux {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.18rem;
+  font-weight: 500;
+  color: #244b36;
+  opacity: 0.88;
+  line-height: 1.85;
+}
+
+/* CARD LUXURY */
+.green-card-lux {
+  background: rgba(255,255,255,0.32);
+  backdrop-filter: blur(18px);
+  padding: 2.8rem 2.2rem;
+  border-radius: 30px;
+  border: 1px solid rgba(27,94,33,0.20);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.12);
+  transition: all 0.45s ease-in-out;
+}
+.green-card-lux:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 35px 75px rgba(21,66,30,0.38);
+}
+
+/* ICON BOX */
+.icon-box-lux {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(135deg, #10d567, #1b5e21);
+  color: #fff;
+  font-size: 2.1rem;
+  transition: transform .35s ease, box-shadow .35s ease;
+  box-shadow: 0 10px 26px rgba(27,94,33,0.32);
+}
+.icon-box-lux:hover {
+  transform: scale(1.18);
+  box-shadow: 0 16px 36px rgba(27,94,33,0.45);
+}
+
+/* CARD DESC */
+.card-desc {
+  color: #244b36;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  opacity: .92;
+}
+
+/* LUXURY CHECK LIST */
+.list-check-lux {
+  list-style: none;
+  padding: 0;
+}
+.list-check-lux li {
+  position: relative;
+  padding-left: 2.2rem;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  color: #1e4633;
+}
+.list-check-lux li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #10d567;
+  font-size: 1.15rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.18);
+}
+
+/* SMOOTH FADE IN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.1s ease-out forwards;
+}
+.fade-in.delay-1 { animation-delay: 0.3s; }
+.fade-in.delay-2 { animation-delay: 0.6s; }
+.fade-in.delay-3 { animation-delay: 0.9s; }
+.fade-in.delay-4 { animation-delay: 1.2s; }
+.fade-in.delay-5 { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .section-title-lux { font-size: 2.8rem; }
+  .green-card-lux { padding: 2.4rem 1.7rem; }
+}
+@media (max-width: 768px) {
+  .section-title-lux { font-size: 2.5rem; }
+  .section-sub-lux { font-size: 1.05rem; }
+}
+@media (max-width: 576px) {
+  .section-title-lux { font-size: 2rem; letter-spacing: 1px; }
+  .icon-box-lux { width: 68px; height: 68px; font-size: 1.55rem; }
+  .card-desc { font-size: 0.92rem;}
+}
+
+</style>
+
+
+<!-- ================= GALLERY SANK PREMIUM LUXURY ================= -->
+<section id="gallery" class="gallery-green-lux">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+      <h2 class="section-title-lux fade-in delay-1">Our Gallery</h2>
+      <div class="section-divider-lux mx-auto mt-2"></div>
+      <p class="section-sub-lux fade-in delay-2 mt-3">
+        A visual journey of <span class="highlight-lux">PT. Seaweed Anugrah Nusantara Kita (SANK)</span> — 
+        showcasing our commitment to seaweed cultivation, innovation, community development, and global sustainability.
+      </p>
+    </div>
+
+    <!-- GALLERY GRID -->
+    <div class="row g-4 justify-content-center fade-in delay-3">
+
+      <!-- Image 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-card-lux">
+          <img src="assets/img/gallery1.jpg" alt="Seaweed Farm" class="img-fluid rounded-4">
+          <div class="gallery-overlay-lux">
+            <h6>Seaweed Cultivation</h6>
+            <p>Daily cultivation activities ensuring high-quality and sustainable seaweed growth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-card-lux">
+          <img src="assets/img/gallery2.jpg" alt="Processing Facility" class="img-fluid rounded-4">
+          <div class="gallery-overlay-lux">
+            <h6>Processing Facility</h6>
+            <p>Modern processing system transforming raw seaweed into global-standard products.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-card-lux">
+          <img src="assets/img/gallery3.jpg" alt="Research and Development" class="img-fluid rounded-4">
+          <div class="gallery-overlay-lux">
+            <h6>Research & Development</h6>
+            <p>Innovative breakthroughs through continuous research for seaweed-based industries.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-card-lux">
+          <img src="assets/img/gallery4.jpg" alt="Community Empowerment" class="img-fluid rounded-4">
+          <div class="gallery-overlay-lux">
+            <h6>Community Empowerment</h6>
+            <p>Collaborating with coastal communities to improve welfare and sustainable economy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-card-lux">
+          <img src="assets/img/gallery5.jpg" alt="Export Activity" class="img-fluid rounded-4">
+          <div class="gallery-overlay-lux">
+            <h6>Export Activity</h6>
+            <p>Delivering premium-quality seaweed products to international markets worldwide.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-card-lux">
+          <img src="assets/img/gallery6.jpg" alt="Innovation Team" class="img-fluid rounded-4">
+          <div class="gallery-overlay-lux">
+            <h6>Innovation Team</h6>
+            <p>The passionate team behind SANK’s sustainable technology and industrial advancements.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* ===== GALLERY - GREEN PREMIUM LUXURY UPGRADED ===== */
+.gallery-green-lux {
+  background: linear-gradient(180deg, #ffffff, #e6f7ed);
+  padding: 7rem 1rem;
+}
+
+/* CARD */
+.gallery-card-lux {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+  box-shadow: 0 20px 55px rgba(0,0,0,0.14);
+  transition: transform .5s cubic-bezier(.23,1,.32,1),
+              box-shadow .5s ease;
+}
+.gallery-card-lux:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 75px rgba(16,80,40,0.28);
+}
+
+/* IMAGE */
+.gallery-card-lux img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s ease, filter .7s ease;
+}
+.gallery-card-lux:hover img {
+  transform: scale(1.18);
+  filter: brightness(.82);
+}
+
+/* OVERLAY TEXT LUXURY */
+.gallery-overlay-lux {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.1rem 1rem;
+  background: linear-gradient(180deg, rgba(11, 121, 52, 0.0), rgba(11,121,42,0.85));
+  backdrop-filter: blur(10px);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity .45s ease, transform .45s ease;
+}
+
+.gallery-card-lux:hover .gallery-overlay-lux {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TEXT */
+.gallery-overlay-lux h6 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.35);
+}
+
+/* HOVER LIGHT LUX ACCENT */
+.gallery-card-lux::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 250%;
+  height: 250%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 45%);
+  transform: rotate(45deg);
+  transition: opacity .7s ease;
+  opacity: 0;
+}
+.gallery-card-lux:hover::after {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px){
+  .gallery-overlay-lux h6 { font-size: 1.05rem; }
+}
+@media(max-width: 768px){
+  .gallery-green-lux { padding: 5rem 1rem; }
+  .gallery-overlay-lux h6 { font-size: 0.95rem; }
+}
+@media(max-width: 576px){
+  .gallery-overlay-lux { padding: 0.75rem; }
+  .gallery-overlay-lux h6 { font-size: 0.88rem; }
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<!-- ================= SANK CONTACT - PREMIUM LUXURY ================= -->
+<section id="contact" class="kontak-green-lux py-5">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="section-title-lux fade-in mb-2">Contact & Information</h2>
+      <div class="section-divider-lux mx-auto mb-3"></div>
+      <p class="section-sub-lux fade-in delay-1">
+        Connect with <span class="highlight-lux">PT. Seaweed Anugrah Nusantara Kita (SANK)</span> for inquiries, business partnerships,
+        investment opportunities, or consultation related to seaweed cultivation and sustainable industry solutions.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Contact Info -->
+      <div class="col-12 col-lg-6 fade-in delay-2">
+        <div class="card-green-lux h-100 p-5">
+          <h5 class="fw-bold text-success mb-4">Company Information</h5>
+          <ul class="list-contact-lux">
+
+            <!-- Address -->
+            <li>
+              <h6><i class="bi bi-geo-alt-fill text-success me-2"></i>Head Office Address</h6>
+              <p>
+                Graha Panyilekun Asri Block B No. 3–5, Bandung, West Java – 40164 <br>
+                STC Senayan, 4th Floor Room 31–34, Tanah Abang, Central Jakarta – 10270
+              </p>
+            </li>
+
+            <!-- Project Locations -->
+            <li>
+              <h6><i class="bi bi-geo-fill text-success me-2"></i>Project Locations</h6>
+              <p>
+                Thousand Islands – Seaweed plantation and educational tourism<br>
+                Sumenep – Large-scale seaweed cultivation and farmer empowerment<br>
+                Takalar – Research and processing development hub
+              </p>
+            </li>
+
+            <!-- Email -->
+            <li>
+              <h6><i class="bi bi-envelope-fill text-success me-2"></i>Email</h6>
+              <a href="mailto:seaweed.nusantara@sank.co.id">seaweed.nusantara@sank.co.id</a>
+              <p class="small mt-1 text-muted">
+                Available for corporate inquiries and partner communications.
+              </p>
+            </li>
+
+            <!-- Website -->
+            <li>
+              <h6><i class="bi bi-globe2 text-success me-2"></i>Website</h6>
+              <a href="http://www.sank.co.id" target="_blank">www.sank.co.id</a>
+              <p class="small mt-1 text-muted">
+                Visit our website for company profile, services, publications, and updates.
+              </p>
+            </li>
+
+            <!-- Phone -->
+            <li>
+              <h6><i class="bi bi-telephone-fill text-success me-2"></i>Phone</h6>
+              <span>(+62) 21 5793 1879</span>
+              <p class="small mt-1 text-muted">
+                Office hours: Monday – Friday, 08:00 – 17:00 WIB (GMT+7)
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* ===== KONTAK GREEN ULTRA PREMIUM LUXURY ===== */
+.kontak-green-lux {
+  background: radial-gradient(circle at top, #e9fbf0 0%, #ffffff 70%);
+  padding: 7rem 1.5rem;
+}
+
+/* SECTION TITLE */
+.section-title-lux {
+  font-weight: 900;
+  color: #0c3d24;
+  font-size: 3.2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  background-clip: text;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+.section-divider-lux {
+  width: 120px;
+  height: 6px;
+  background: linear-gradient(90deg, #00cb48, #178a45);
+  border-radius: 50px;
+  margin: 0.6rem auto 1.5rem;
+  box-shadow: 0 6px 18px rgba(23,138,69,0.35);
+}
+.section-sub-lux {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #264d38;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* CARD LUXURY CONTACT */
+.card-green-lux {
+  background: rgba(255,255,255,0.32);
+  backdrop-filter: blur(16px);
+  border-radius: 2rem;
+  border: 1px solid rgba(23,138,69,0.3);
+  padding: 3rem 2.5rem;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+  transition: transform 0.45s ease, box-shadow 0.45s ease, border-color 0.4s ease;
+}
+.card-green-lux:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 28px 70px rgba(23,138,69,0.35);
+  border-color: #178a45;
+}
+
+/* LIST CONTACT */
+.list-contact-lux {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-contact-lux li {
+  margin-bottom: 2rem;
+}
+.list-contact-lux h6 {
+  font-weight: 800;
+  color: #124e2d;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.list-contact-lux h6 i {
+  font-size: 1.4rem;
+  margin-right: 10px;
+  transition: transform .3s ease, color .3s ease;
+}
+.list-contact-lux h6:hover i {
+  transform: rotate(10deg) scale(1.2);
+  color: #00cb48;
+}
+.list-contact-lux a {
+  color: #0b5a34;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.list-contact-lux a:hover {
+  color: #00c749;
+  text-shadow: 0 0 6px rgba(0,199,73,0.7);
+}
+
+/* FADE EFFECT */
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeInUp 0.95s forwards;
+}
+.fade-in.delay-1 { animation-delay: 0.35s; }
+.fade-in.delay-2 { animation-delay: 0.7s; }
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px){
+  .section-title-lux { font-size: 2.7rem; }
+  .card-green-lux { text-align: center; padding: 2.8rem 2rem; }
+  .list-contact-lux { text-align: center; }
+}
+@media (max-width: 576px){
+  .section-title-lux { font-size: 2.2rem; }
+  .card-green-lux { padding: 2.2rem 1.4rem; }
+  .list-contact-lux h6 { font-size: 1rem; }
+}
+
+</style>
+
+
+
+
+
+
+<!-- ================= Footer Luxury PT. SANK ================= -->
+<footer class="footer-green-lux py-5">
+  <div class="container text-center">
+
+    <!-- BRAND -->
+    <div class="mb-5">
+      <h4 class="fw-bold text-white mb-2">PT. SEAWEED ANUGRAH NUSANTARA KITA (SANK)</h4>
+      <p class="footer-desc-lux mx-auto">
+        Indonesia’s leading seaweed downstream solution company, built on sustainable and eco-friendly industry principles.  
+        Empowering the growth of the blue economy for a better future.
+      </p>
+    </div>
+
+    <hr class="footer-divider-lux">
+
+    <!-- COPYRIGHT CENTERED -->
+    <p class="small text-secondary mb-0">
+      © 2025 <span class="fw-semibold text-white">PT. Seaweed Anugrah Nusantara Kita (SANK)</span>. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+<style>
+/* ===== FOOTER GREEN PREMIUM LUXURY ===== */
+.footer-green-lux {
+  background: radial-gradient(circle at top, #071007, #0d1f12);
+  color: #c0d2bc;
+  border-top: 2px solid #1f9b50;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* BRAND TEXT */
+.footer-desc-lux {
+  max-width: 700px;
+  font-size: 1rem;
+  color: #a8c0a1;
+  line-height: 1.7;
+}
+
+/* CARD LUXURY */
+.footer-card-lux {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(18px);
+  border-radius: 1.8rem;
+  padding: 2.2rem 2rem;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+.footer-card-lux:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(46,125,50,0.35);
+  border: 1px solid rgba(46,125,50,0.25);
+}
+
+/* ICON FOOTER */
+.icon-footer-lux {
+  font-size: 2.2rem;
+  color: #2dcf5a;
+  display: block;
+  margin: 0 auto 1rem;
+  transition: all 0.35s ease;
+}
+.footer-card-lux:hover .icon-footer-lux {
+  transform: rotate(15deg) scale(1.15);
+  text-shadow: 0 0 8px rgba(45,207,90,0.6);
+}
+
+/* TITLE */
+.footer-title-lux {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+}
+
+/* DIVIDER */
+.footer-divider-lux {
+  border: none;
+  height: 3px;
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 10px;
+  background: linear-gradient(90deg,#2e7d32,#0dcf5a);
+  opacity: 0.4;
+  box-shadow: 0 0 12px rgba(13,207,90,0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .footer-card-lux { padding: 2rem 1.5rem; }
+  .footer-title-lux { font-size: 1rem; }
+  .footer-desc-lux { font-size: 0.95rem; }
+}
+@media (max-width: 576px) {
+  .footer-card-lux { padding: 1.8rem 1.2rem; margin-bottom: 1rem; }
+  .footer-title-lux { font-size: 0.95rem; }
+  .footer-desc-lux { font-size: 0.9rem; }
+}
+</style>
+
+
+
+
+
+
+
+
+
+<!-- ================= Tombol Scroll ke Atas Elegan - Green SANK ================= -->
+<button id="scrollTopBtn" 
+  class="scroll-top-btn-elegant d-flex align-items-center justify-content-center"
+  aria-label="Kembali ke atas">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<style>
+/* ================= Scroll Top Button - Elegan Green SANK ================= */
+.scroll-top-btn-elegant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+
+  width: 50px;
+  height: 50px;
+  background: rgba(46, 139, 87, 0.85); /* Green SANK Semi */
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px); /* Glass effect */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px) scale(0.95);
+  transition: all 0.35s ease-in-out;
+  cursor: pointer;
+}
+
+.scroll-top-btn-elegant.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.scroll-top-btn-elegant:hover {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  border-color: #d4f8d1;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 12px 30px rgba(46, 139, 87, 0.35);
+}
+
+.scroll-top-btn-elegant i {
+  font-size: 22px;
+  pointer-events: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.scroll-top-btn-elegant:hover i {
+  transform: translateY(-3px) rotate(-10deg);
+  color: #e0f3e5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .scroll-top-btn-elegant { width: 45px; height: 45px; bottom: 18px; right: 18px; font-size: 1.1rem; }
+}
+@media (max-width: 992px) {
+  .scroll-top-btn-elegant { width: 42px; height: 42px; bottom: 16px; right: 16px; font-size: 1rem; }
+}
+@media (max-width: 576px) {
+  .scroll-top-btn-elegant { width: 38px; height: 38px; bottom: 14px; right: 14px; font-size: 0.95rem; }
+}
+</style>
+
+<script>
+  // Tombol Scroll ke Atas
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 250) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
